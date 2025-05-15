@@ -1,8 +1,8 @@
 from custom_components.mypyllant import SystemCoordinator
 from custom_components.mypyllant.number import SystemManualCoolingDays
-from myPyllant.api import MyPyllantAPI
-from myPyllant.tests.generate_test_data import DATA_DIR
-from myPyllant.tests.utils import load_test_data
+from .libs.myPyllant.api import MyPyllantAPI
+from .libs.myPyllant.tests.generate_test_data import DATA_DIR
+from .libs.myPyllant.tests.utils import load_test_data
 
 
 async def test_manual_cooling_days(

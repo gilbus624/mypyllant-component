@@ -30,14 +30,14 @@ from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.template import as_datetime
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
-from myPyllant.const import DEFAULT_QUICK_VETO_DURATION
-from myPyllant.models import (
+from .libs.myPyllant.const import DEFAULT_QUICK_VETO_DURATION
+from .libs.myPyllant.models import (
     System,
     Zone,
     ZoneTimeProgram,
     RoomTimeProgram,
 )
-from myPyllant.enums import (
+from .libs.myPyllant.enums import (
     ZoneOperatingMode,
     ZoneOperatingModeVRC700,
     ZoneCurrentSpecialFunction,

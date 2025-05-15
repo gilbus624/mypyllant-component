@@ -19,12 +19,12 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 from custom_components.mypyllant.const import DOMAIN
 from custom_components.mypyllant.decorators import ensure_token_refresh
 from custom_components.mypyllant.coordinator import SystemCoordinator
-from myPyllant.enums import (
+from .libs.myPyllant.enums import (
     VentilationOperationMode,
     VentilationFanStageType,
     VentilationOperationModeVRC700,
 )
-from myPyllant.models import System, Ventilation
+from .libs.myPyllant.models import System, Ventilation
 
 VENTILATION_HVAC_MODE_MAP = {
     HVACMode.FAN_ONLY: VentilationOperationMode.NORMAL,

@@ -2,11 +2,11 @@ import pytest as pytest
 from homeassistant.helpers.entity_registry import DATA_REGISTRY, EntityRegistry
 from homeassistant.loader import DATA_COMPONENTS, DATA_INTEGRATIONS
 
-from myPyllant.api import MyPyllantAPI
-from myPyllant.models import DeviceData
-from myPyllant.enums import CircuitState
-from myPyllant.tests.generate_test_data import DATA_DIR
-from myPyllant.tests.utils import list_test_data, load_test_data
+from .libs.myPyllant.api import MyPyllantAPI
+from .libs.myPyllant.models import DeviceData
+from .libs.myPyllant.enums import CircuitState
+from .libs.myPyllant.tests.generate_test_data import DATA_DIR
+from .libs.myPyllant.tests.utils import list_test_data, load_test_data
 
 from custom_components.mypyllant.sensor import (
     CircuitFlowTemperatureSensor,

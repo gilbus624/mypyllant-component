@@ -6,9 +6,9 @@ from homeassistant import data_entry_flow
 from homeassistant.config_entries import SOURCE_USER
 from homeassistant.core import HomeAssistant
 
-from myPyllant.api import MyPyllantAPI
-from myPyllant.tests.generate_test_data import DATA_DIR
-from myPyllant.tests.utils import load_test_data
+from .libs.myPyllant.api import MyPyllantAPI
+from .libs.myPyllant.tests.generate_test_data import DATA_DIR
+from .libs.myPyllant.tests.utils import load_test_data
 
 from custom_components.mypyllant.const import DOMAIN
 from custom_components.mypyllant import async_setup_entry, async_unload_entry

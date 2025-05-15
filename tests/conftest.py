@@ -7,10 +7,10 @@ from custom_components.mypyllant.coordinator import (
     SystemCoordinator,
     DailyDataCoordinator,
 )
-from myPyllant.api import MyPyllantAPI
-from myPyllant.const import DEFAULT_BRAND
-from myPyllant.models import Circuit, DomesticHotWater, System, Zone
-from myPyllant.tests.utils import _mocked_api, _mypyllant_aioresponses
+from .libs.myPyllant.api import MyPyllantAPI
+from .libs.myPyllant.const import DEFAULT_BRAND
+from .libs.myPyllant.models import Circuit, DomesticHotWater, System, Zone
+from .libs.myPyllant.tests.utils import _mocked_api, _mypyllant_aioresponses
 from polyfactory.factories import DataclassFactory
 
 from custom_components.mypyllant.const import (

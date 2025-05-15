@@ -17,10 +17,10 @@ from custom_components.mypyllant.const import (
     SERVICE_EXPORT,
     DOMAIN,
 )
-from myPyllant.api import MyPyllantAPI
-from myPyllant.models import RoomTimeProgram
-from myPyllant.tests.generate_test_data import DATA_DIR
-from myPyllant.tests.utils import list_test_data, load_test_data
+from .libs.myPyllant.api import MyPyllantAPI
+from .libs.myPyllant.models import RoomTimeProgram
+from .libs.myPyllant.tests.generate_test_data import DATA_DIR
+from .libs.myPyllant.tests.utils import list_test_data, load_test_data
 
 from tests.utils import get_config_entry
 

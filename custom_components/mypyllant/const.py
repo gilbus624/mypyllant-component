@@ -1,4 +1,4 @@
-from myPyllant.enums import ZoneOperatingType
+from .libs.myPyllant.enums import ZoneOperatingType
 
 DOMAIN = "mypyllant"
 OPTION_UPDATE_INTERVAL = "update_interval"

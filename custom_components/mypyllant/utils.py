@@ -17,11 +17,11 @@ from custom_components.mypyllant.const import (
     OPTION_DEFAULT_MANUAL_COOLING_DURATION,
     DEFAULT_MANUAL_COOLING_DURATION,
 )
-from myPyllant.const import DEFAULT_HOLIDAY_DURATION
+from .libs.myPyllant.const import DEFAULT_HOLIDAY_DURATION
 
 if typing.TYPE_CHECKING:
     from custom_components.mypyllant.coordinator import SystemCoordinator
-    from myPyllant.models import (
+    from .libs.myPyllant.models import (
         System,
         DomesticHotWater,
         Zone,

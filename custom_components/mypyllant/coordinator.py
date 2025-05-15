@@ -30,9 +30,9 @@ from custom_components.mypyllant.const import (
     DEFAULT_FETCH_EEBUS,
 )
 from custom_components.mypyllant.utils import is_quota_exceeded_exception
-from myPyllant.api import MyPyllantAPI
-from myPyllant.enums import DeviceDataBucketResolution
-from myPyllant.models import System, DeviceData
+from .libs.myPyllant.api import MyPyllantAPI
+from .libs.myPyllant.enums import DeviceDataBucketResolution
+from .libs.myPyllant.models import System, DeviceData
 
 _LOGGER = logging.getLogger(__name__)
 

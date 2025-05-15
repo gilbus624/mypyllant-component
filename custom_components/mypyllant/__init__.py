@@ -15,17 +15,17 @@ from homeassistant.exceptions import ConfigEntryAuthFailed
 from homeassistant.helpers import selector
 from homeassistant.helpers.template import as_datetime
 
-from myPyllant import export, report
+from .libs.myPyllant import export, report
 
-from myPyllant.api import MyPyllantAPI
-from myPyllant.const import DEFAULT_BRAND
-from myPyllant.enums import DeviceDataBucketResolution
-from myPyllant.http_client import (
+from .libs.myPyllant.api import MyPyllantAPI
+from .libs.myPyllant.const import DEFAULT_BRAND
+from .libs.myPyllant.enums import DeviceDataBucketResolution
+from .libs.myPyllant.http_client import (
     AuthenticationFailed,
     RealmInvalid,
     LoginEndpointInvalid,
 )
-from myPyllant.tests import generate_test_data
+from .libs.myPyllant.tests import generate_test_data
 from .const import (
     DEFAULT_COUNTRY,
     DEFAULT_UPDATE_INTERVAL,

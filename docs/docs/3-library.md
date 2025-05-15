@@ -78,8 +78,8 @@ import asyncio
 import logging
 from datetime import datetime, timedelta
 
-from myPyllant.api import MyPyllantAPI
-from myPyllant.const import ALL_COUNTRIES, BRANDS, DEFAULT_BRAND
+from .libs.myPyllant.api import MyPyllantAPI
+from .libs.myPyllant.const import ALL_COUNTRIES, BRANDS, DEFAULT_BRAND
 
 parser = argparse.ArgumentParser(description="Export data from myVaillant API   .")
 parser.add_argument("user", help="Username (email address) for the myVaillant app")
